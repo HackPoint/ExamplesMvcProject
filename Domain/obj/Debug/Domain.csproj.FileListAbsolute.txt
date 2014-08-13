@@ -1,0 +1,5 @@
+C:\Users\genadysh\Documents\Visual Studio 2013\Projects\DemoMvcProject\Domain\bin\Debug\Domain.dll
+C:\Users\genadysh\Documents\Visual Studio 2013\Projects\DemoMvcProject\Domain\bin\Debug\Domain.pdb
+C:\Users\genadysh\Documents\Visual Studio 2013\Projects\DemoMvcProject\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\genadysh\Documents\Visual Studio 2013\Projects\DemoMvcProject\Domain\obj\Debug\Domain.dll
+C:\Users\genadysh\Documents\Visual Studio 2013\Projects\DemoMvcProject\Domain\obj\Debug\Domain.pdb

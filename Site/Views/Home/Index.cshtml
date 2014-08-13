@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Page - Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+</head>
+<body>
+    <ul class="pagination">
+        @{
+            Pager pager = ViewBag.Pager;
+
+            if (!pager.HasPreviousPage) {
+                <li><a href="/home/index/@pager.PreviousPageIndex">&laquo;</a></li>
+            }
+            
+            foreach (int page in ViewBag.Pager) {
+                string active = pager.CurrentPageIndex == page ? "active" : "";
+                <li class="@active">
+                    <a href="/home/index/@page">@page.ToString(CultureInfo.InvariantCulture)</a>
+                </li>
+            }
+
+            if (pager.HasNextPage) {
+                <li><a href="/home/index/@pager.NextPageIndex">&raquo;</a></li>
+            }
+        }
+    </ul>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
